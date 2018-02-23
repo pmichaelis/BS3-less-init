@@ -1,0 +1,34 @@
+@import (reference)'setup';
+
+body:before {
+  display: none; /* Prevent from displaying. */
+}
+
+/* Large Devices, Wide Screens 1200px */
+@media @large {
+  body:before {
+    content: "large";
+  }
+}
+
+/* Medium Devices, Desktops  992px */
+@media @desktop {
+  body:before {
+    content: "desktop";
+  }
+}
+
+/* Small Devices, Tablets */
+@media @tablet {
+  body:before {
+    content: "tablet";
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media @phone {
+  body:before {
+    content: "phone";
+    display: none; /* Prevent from displaying. */
+  }
+}

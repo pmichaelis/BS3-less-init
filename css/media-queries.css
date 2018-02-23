@@ -1,0 +1,30 @@
+body:before {
+  display: none;
+  /* Prevent from displaying. */
+}
+/* Large Devices, Wide Screens 1200px */
+@media only screen and (min-width: 993px) {
+  body:before {
+    content: "large";
+  }
+}
+/* Medium Devices, Desktops  992px */
+@media only screen and (max-width: 992px) {
+  body:before {
+    content: "desktop";
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  body:before {
+    content: "tablet";
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  body:before {
+    content: "phone";
+    display: none;
+    /* Prevent from displaying. */
+  }
+}
